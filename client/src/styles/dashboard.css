@@ -1,0 +1,80 @@
+/* ===============================
+  font-weight: 700;
+}
+
+.profile-card h4 {
+  font-size: 18px;
+}
+
+.profile-card p {
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+/* ===============================
+   STATS CARDS
+================================ */
+
+.stats-grid {
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stats-card {
+  background: #0f1729;
+  border: 1px solid #1d2740;
+
+  border-radius: 28px;
+
+  padding: 28px;
+
+  min-height: 230px;
+}
+
+.stats-icon {
+  width: 64px;
+  height: 64px;
+
+  border-radius: 20px;
+}
+
+.purple-card {
+  background: linear-gradient(
+    135deg,
+    #c026d3,
+    #7e22ce
+  );
+}
+
+.green-card {
+  background: #00d84f;
+}
+
+.yellow-card {
+  background: #facc15;
+}
+
+.pink-card {
+  background: #ec4899;
+}
+
+.stats-card h3 {
+  margin-top: 32px;
+
+  color: #94a3b8;
+  font-size: 22px;
+}
+
+.stats-card h1 {
+  margin-top: 16px;
+
+  font-size: 72px;
+  font-weight: 700;
+}
+
+/* ===============================
+   DASHBOARD GRID
+====
