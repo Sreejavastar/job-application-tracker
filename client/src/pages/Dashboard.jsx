@@ -38,7 +38,7 @@ function Dashboard() {
 
                     <div className="xl:col-span-6">
                         <AnalyticsChart 
-                            darkMode={darkMode}
+                            darkMode={darkMode} />
                           
                     </div>
 

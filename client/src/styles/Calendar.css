@@ -1,0 +1,185 @@
+.formData{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.application-calendar {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 28px;
+  color: #222222;
+  font-family: "DM Sans", sans-serif;
+max-width: 90vw;
+}
+
+.calendar-subtitle {
+  color: #777777;
+  margin-bottom: 20px;
+}
+
+.months-scroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 8px 4px 16px;
+  scroll-snap-type: x mandatory;
+  /* background-color: #f8f8f8; */
+}
+
+.month-section {
+  flex: 0 0 300px;
+  margin-bottom: 0;
+  scroll-snap-align: start;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 7px;
+  padding: 17px;
+  background-color: #fff;
+border-radius: 19px;
+box-shadow: 0px 0px 21px #dddddd;
+height: 69%;
+}
+
+.weekday {
+  text-align: center;
+  font-size: 12px;
+  color: #777777;
+  padding-bottom: 6px;
+}
+
+.date-cell,
+.empty-day {
+  aspect-ratio: 1;
+  min-width: 0;
+}
+
+.date-cell {
+  border: 1px solid transparent;
+  border-radius: 9px;
+  cursor: pointer;
+  color: #222222;
+  font-size: 13px;
+  transition: transform 0.15s ease;
+}
+
+.date-cell:hover {
+  transform: scale(1.08);
+}
+
+.date-cell.selected {
+  border: 2px solid #f85b4e;
+  font-weight: 700;
+}
+.orangeHiglight{
+    color: #ff8912;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+  width: 46%;
+}
+
+.application-form label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.application-form input,
+.application-form textarea {
+  font: inherit;
+  padding: 12px;
+  border: 1px solid #eae7e0;
+  border-radius: 10px;
+}
+
+.application-form textarea {
+  min-height: 85px;
+  resize: vertical;
+}
+
+.application-form button {
+  background: #f85b4e;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 13px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+.application-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.saved-message {
+  color: #287a45;
+  font-size: 14px;
+}
+.month-section.active-month h3 {
+  color: #f85b4e;
+  font-weight: 700;
+}
+.month-section.active-month .calendar-grid  {
+      background: #ffdac3;
+}
+#dataRecord{
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    gap: 30px;
+}
+.ApplyCounter{
+    background: #000000c7;
+    color: white;
+    height: 78px;
+    width: 96%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 30px #bbbbbb;
+    padding: 23px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ApplyCounter label{
+    font-size: 23px;
+}
+.ApplyCounter .noApplications{
+    color: black;
+    background: #FFE477;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 14px 27px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #d5651a59;
+}
+.ApplyWhere{
+    background: #fff6c8ba;
+    padding: 23px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 30px #bbbbbb;
+}
+.ApplyWhere label{
+    font-size: 23px;
+}
+.ApplyWhere p{
+    background: white;
+    padding: 15px 12px;
+    border-radius: 12px;
+}
+.highLightMonth{
+    background: #000000c7;
+    padding: 3px 11px;
+    border-radius: 30px;
+    color: #ffe374;
+    box-shadow: 0px 0px 11px gray;
+}
